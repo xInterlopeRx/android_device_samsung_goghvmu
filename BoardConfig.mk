@@ -33,7 +33,7 @@ TARGET_BOARD_INFO_FILE ?= device/samsung/goghvmu/board-info.txt
 #TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/samsung/d2lte/gogh-common/installer_extra
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_gogh_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_apexq_defconfig
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
 TARGET_KERNEL_SOURCE        := kernel/samsung/d2
 
