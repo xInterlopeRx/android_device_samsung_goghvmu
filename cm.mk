@@ -1,7 +1,7 @@
-$(call inherit-product, device/samsung/apexqtmo/full_apexqtmo.mk)
+$(call inherit-product, device/samsung/goghvmu/full_goghvmu.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
@@ -9,9 +9,9 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=apexqtmo TARGET_DEVICE=apexqtmo BUILD_FINGERPRINT="samsung/apexqtmo/apexqtmo:4.1.2/JZO54K/T699UVBMC5:user/release-keys" PRIVATE_BUILD_DESC="apexqtmo-user 4.1.2 JZO54K T699UVBMC5 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=goghvmu TARGET_DEVICE=goghvmu BUILD_FINGERPRINT="samsung/goghvmu/goghvmu:4.1.2/JZO54K/L300VPAMC1:user/release-keys" PRIVATE_BUILD_DESC="goghvmu-user 4.1.2 JZO54K L300VPAMC1 release-keys"
 
 
-PRODUCT_NAME := cm_apexqtmo
-PRODUCT_DEVICE := apexqtmo
+PRODUCT_NAME := cm_goghvmu
+PRODUCT_DEVICE := goghvmu
 

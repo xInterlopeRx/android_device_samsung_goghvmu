@@ -21,19 +21,19 @@
 #
 
 # inherit from the proprietary version
--include vendor/samsung/apexqtmo/BoardConfigVendor.mk
+-include vendor/samsung/goghvmu/BoardConfigVendor.mk
 # inherit from common d2
 -include device/samsung/d2lte/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := apexqtmo
-TARGET_BOARD_INFO_FILE ?= device/samsung/apexqtmo/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := goghvmu
+TARGET_BOARD_INFO_FILE ?= device/samsung/goghvmu/board-info.txt
 
 # Insert contents of file near end of updater-script
-#TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/samsung/d2lte/apexq-common/installer_extra
+#TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/samsung/d2lte/gogh-common/installer_extra
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_apexq_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_gogh_defconfig
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
 TARGET_KERNEL_SOURCE        := kernel/samsung/d2
 
@@ -43,7 +43,7 @@ TARGET_INIT_VENDOR_LIB :=
 TARGET_LIBINIT_DEFINES_FILE :=
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/apexqtmo/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/goghvmu/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF :=
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY :=
 BOARD_HAVE_BLUETOOTH_BCM :=

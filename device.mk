@@ -14,29 +14,22 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/samsung/apexqtmo/apexqtmo-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/goghvmu/goghvmu-vendor.mk)
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/apexqtmo/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/goghvmu/overlay
 
 ## common overlays
 #DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay-gsm
 
 # Media configuration
 PRODUCT_COPY_FILES += \
-    device/samsung/apexqtmo/configs/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
-    device/samsung/apexqtmo/media/media_profiles.xml:system/etc/media_profiles.xml
+    device/samsung/goghvmu/configs/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
+    device/samsung/goghvmu/media/media_profiles.xml:system/etc/media_profiles.xml
 
 # Boot Logo
 PRODUCT_COPY_FILES += \
-    device/samsung/apexqtmo/configs/initlogo.rle:root/initlogo.rle
+    device/samsung/goghvmu/configs/initlogo.rle:root/initlogo.rle
 
-# Hardware keyboard
-PRODUCT_COPY_FILES += \
-    device/samsung/apexqtmo/keyboard/sec_keypad.kl:system/usr/keylayout/sec_keypad.kl \
-    device/samsung/apexqtmo/keyboard/sec_keypad.kcm:system/usr/keychars/sec_keypad.kcm \
-    device/samsung/apexqtmo/keyboard/sec_keypad.idc:system/usr/idc/sec_keypad.idc
-PRODUCT_PACKAGES += \
-    ApexQKeypad
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.mode=none \

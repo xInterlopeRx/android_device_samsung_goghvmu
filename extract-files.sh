@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=apexqtmo
+export DEVICE=goghvmu
 export VENDOR=samsung
 ./../d2lte/extract-files.sh $@
